@@ -38,6 +38,8 @@ M.general = {
   v = {
     ["J"] = { ":m '>+1<CR>gv=gv", "moving highlighted text downwards"},
     ["K"] = { ":m '<-2<CR>gv=gv", "moving highlighted text downwards"},
+    [">"] = { ">gv", "maintain highlight after indent forward"},
+    ["<"] = { "<gv", "maintain highlight after indent backward"},
   },
 
   x = {

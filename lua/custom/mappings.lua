@@ -50,7 +50,7 @@ M.dap = {
   plugin = true,
   n = {
     -- debugging shortcuts
-    ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>", "toggling breakpoint"},
+    ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>", "toggle breakpoint"},
     ["<leader>dc"] = { function() require('dap').continue() end, "launch debugger" },
     ["<leader>dsi"] = { function() require('dap').step_into() end, "step into" },
     ["<leader>dso"] = { function() require('dap').step_over() end, "step over" },

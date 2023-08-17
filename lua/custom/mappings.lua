@@ -30,6 +30,12 @@ M.general = {
     ["N"] = {"Nzzzv", "central search control upwarads"},
     ["<C-d>"] = {"<C-d>zz", "central half page down"},
     ["<C-u>"] = {"<C-u>zz", "central half page up"},
+
+    -- lsp keymaps
+    ["<space>li"] = {"<cmd> LspInfo<CR>", "LSP info"},
+    ["<space>lp"] = {"<cmd> LspStop<CR>", "LSP stop"},
+    ["<space>lo"] = {"<cmd> LspStart<CR>", "LSP start"},
+    ["<space>lr"] = {"<cmd> LspRestart<CR>", "LSP restart"},
   },
   i = {
     ["jk"] = {"<ESC>", "escape insert mode"}
@@ -66,6 +72,17 @@ M.dap_python = {
         require('dap-python').test_method()
       end, "testing python method"
     }
+  }
+}
+
+M.lspconfig = {
+  plugin = true,
+  n = {
+    -- lsp keymaps
+    ["<space>li"] = {"<cmd> LspInfo<CR>", "LSP info"},
+    ["<space>lp"] = {"<cmd> LspStop<CR>", "LSP stop"},
+    ["<space>lo"] = {"<cmd> LspStart<CR>", "LSP start"},
+    ["<space>lr"] = {"<cmd> LspRestart<CR>", "LSP restart"},
   }
 }
 
